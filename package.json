@@ -18,6 +18,7 @@
     "productName": "OBS Lite Neon",
     "win": {
       "target": "nsis"
-    }
+    },
+    "publish": null
   }
 }
