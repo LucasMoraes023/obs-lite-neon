@@ -1,16 +1,21 @@
 {
   "name": "obs-lite-neon",
   "version": "1.0.0",
-  "main": "electron/main.js",
+  "description": "Gravador de tela leve estilo OBS",
+  "author": "Lucas Moraes",
+  "main": "main.js",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
     "start": "electron .",
-    "dist": "electron-builder"
+    "build": "electron-builder --win"
   },
-  "devDependencies": {
-    "electron": "^28.0.0",
-    "electron-builder": "^24.13.3",
-    "vite": "^5.0.0"
+  "build": {
+    "appId": "com.obslite.neon",
+    "productName": "OBS Lite Neon",
+    "files": [
+      "**/*"
+    ],
+    "win": {
+      "target": "nsis"
+    }
   }
 }
