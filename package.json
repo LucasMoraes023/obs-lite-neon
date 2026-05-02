@@ -6,16 +6,11 @@
   "main": "main.js",
   "scripts": {
     "start": "electron .",
-    "build": "electron-builder --win"
+    "dist": "electron-builder"
   },
-  "build": {
-    "appId": "com.obslite.neon",
-    "productName": "OBS Lite Neon",
-    "files": [
-      "**/*"
-    ],
-    "win": {
-      "target": "nsis"
-    }
+  "devDependencies": {
+    "electron": "^28.0.0",
+    "electron-builder": "^24.0.0",
+    "vite": "^5.0.0"
   }
 }
